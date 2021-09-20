@@ -8,6 +8,11 @@
     <script>
         alert("This is a test of the alert function.");
     </script>
+    <style>
+        body {
+          background-color: rgb(179, 126, 223);
+        }
+        </style>
 </head>
 
 <body>
@@ -20,6 +25,52 @@
     This is a test of the paragraph tags.
 </p>
 <button>Start</button>
-<button>Stop</button>
+<button>Stop</button><br>
+<br>
+<p id="countDownTimer">Waiting to start...</p>
+
+<script>
+    var currTime = 50;
+    document.getElementById("countDownTimer").innerHTML = currTime;
+    setTimeout(function(){
+        currTime = currTime - 5;
+        document.getElementById("countDownTimer").innerHTML = currTime;
+    }, 5000);
+    setTimeout(function(){
+        currTime = currTime - 5;
+        document.getElementById("countDownTimer").innerHTML = currTime;
+    }, 10000);
+    setTimeout(function(){
+        currTime = currTime - 5;
+        document.getElementById("countDownTimer").innerHTML = currTime;
+    }, 15000);
+    setTimeout(function(){
+        currTime = currTime - 5;
+        document.getElementById("countDownTimer").innerHTML = currTime;
+    }, 20000);
+    setTimeout(function(){
+        currTime = currTime - 5;
+        document.getElementById("countDownTimer").innerHTML = currTime;
+    }, 25000);
+    setTimeout(function(){
+        currTime = currTime - 5;
+        document.getElementById("countDownTimer").innerHTML = currTime;
+    }, 30000);
+    setTimeout(function(){
+        currTime = currTime - 5;
+        document.getElementById("countDownTimer").innerHTML = currTime;
+    }, 35000);
+    setTimeout(function(){
+        currTime = currTime - 5;
+        document.getElementById("countDownTimer").innerHTML = currTime;
+    }, 400000);setTimeout(function(){
+        currTime = currTime - 5;
+        document.getElementById("countDownTimer").innerHTML = currTime;
+    }, 45000);setTimeout(function(){
+        currTime = currTime - 5;
+        document.getElementById("countDownTimer").innerHTML = "Blastoff!"
+;
+    }, 50000);
+</script>
 </body>
-</html>
+</html> 
